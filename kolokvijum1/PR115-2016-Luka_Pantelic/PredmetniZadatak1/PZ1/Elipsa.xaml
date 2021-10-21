@@ -1,0 +1,125 @@
+﻿<Window x:Class="PZ1.Elipsa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ1"
+        mc:Ignorable="d"
+        Title="Elipsa" Height="280" Width="300" Background="LightGray">
+    <Grid Margin="0,0,-16,-8">
+
+        <Label Content="Width:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Height:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Fill Color:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Border Color:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Height="32"/>
+        <Label Content="Border Thickness:" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Height="32"/>
+        <TextBox VerticalContentAlignment="Center" Name="Width" HorizontalAlignment="Left" TextAlignment="Center" Height="32" Margin="152,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <TextBox VerticalContentAlignment="Center" Name="Height" HorizontalAlignment="Left" TextAlignment="Center" Height="32" Margin="152,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <TextBox VerticalContentAlignment="Center" Name="BorderThickness" HorizontalAlignment="Left" TextAlignment="Center" Height="32" Margin="152,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <ComboBox Name="FillColor" HorizontalAlignment="Left" Margin="152,81,0,0" VerticalAlignment="Top" Width="130" SelectedIndex="0" Height="32" FontFamily="Calibri" BorderBrush="White">
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Transparent"/>
+                </Canvas>
+                <Label>Select Color</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Blue"/>
+                </Canvas>
+                <Label>Blue</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Green"/>
+                </Canvas>
+                <Label>Green</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Black"/>
+                </Canvas>
+                <Label>Black</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Red"/>
+                </Canvas>
+                <Label>Red</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Yellow"/>
+                </Canvas>
+                <Label>Yellow</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="White"/>
+                </Canvas>
+                <Label>White</Label>
+            </StackPanel>
+        </ComboBox>
+        <ComboBox Name="BorderColor" Background="Transparent" HorizontalAlignment="Left" Margin="152,118,0,0" VerticalAlignment="Top" SelectedIndex="0" Width="130" Height="32" FontFamily="Calibri">
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Transparent"/>
+                </Canvas>
+                <Label>SelectColor</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Blue"/>
+                </Canvas>
+                <Label>Blue</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Green"/>
+                </Canvas>
+                <Label>Green</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Black"/>
+                </Canvas>
+                <Label>Black</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Red"/>
+                </Canvas>
+                <Label>Red</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="Yellow"/>
+                </Canvas>
+                <Label>Yellow</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="25" Height="20">
+                    <Rectangle Width="25" Height="20" Fill="White"/>
+                </Canvas>
+                <Label>White</Label>
+            </StackPanel>
+        </ComboBox>
+        <Button Content="Cancel" Click="Button_Cancel" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top" Width="130" Height="32">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Draw" Click="Button_Draw" HorizontalAlignment="Left" Margin="152,197,0,0" VerticalAlignment="Top" Width="130" Height="32">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
